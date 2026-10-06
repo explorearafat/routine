@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HSC + Coding Master Routine</title>
+<style>
+@page {
+    size: A4;
+    margin: 12mm;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f1f0eb;
+    color: #1d1d1b;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 20px auto;
+    padding: 14mm;
+    background: #faf9f5;
+}
+
+.header {
+    border-bottom: 2px solid #1d1d1b;
+    padding-bottom: 18px;
+    margin-bottom: 22px;
+}
+
+.eyebrow {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 34px;
+    line-height: 1.05;
+}
+
+.subtitle {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #666;
+}
+
+.meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.meta div {
+    border: 1px solid #bbb8ae;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.meta strong {
+    display: block;
+    font-size: 15px;
+    margin-top: 4px;
+    color: #1d1d1b;
+}
+
+.section-title {
+    font-size: 21px;
+    margin: 24px 0 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border-bottom: 1px solid #c9c6bd;
+    padding: 9px 7px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+td {
+    font-size: 13px;
+}
+
+.time {
+    width: 23%;
+    white-space: nowrap;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.type {
+    width: 18%;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+.subject {
+    font-weight: bold;
+}
+
+.note {
+    color: #68665f;
+    font-size: 11px;
+}
+
+.principles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.principle {
+    border-left: 3px solid #1d1d1b;
+    padding: 9px 11px;
+    background: #f0efe9;
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+.sequence {
+    margin-top: 15px;
+}
+
+.sequence-item {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    gap: 10px;
+    border-bottom: 1px solid #c9c6bd;
+    padding: 9px 0;
+}
+
+.number {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.chapter {
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.chapter strong {
+    font-size: 14px;
+}
+
+.footer {
+    margin-top: 24px;
+    padding-top: 12px;
+    border-top: 1px solid #aaa79e;
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    color: #777;
+}
+
+.quote {
+    margin: 22px 0 0;
+    padding: 15px 18px;
+    background: #1d1d1b;
+    color: #faf9f5;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+@media print {
+    body {
+        background: white;
+    }
+
+    .page {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .page {
+        width: 100%;
+        min-height: 100vh;
+        margin: 0;
+        padding: 24px;
+    }
+
+    .meta,
+    .principles {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <header class="header">
+        <div class="eyebrow">8 Month HSC Mission</div>
+        <h1>Study. Build. Repeat.</h1>
+        <div class="subtitle">
+            HSC GPA 5 + Serious Coding — without burning out.
+        </div>
+
+        <div class="meta">
+            <div>
+                Sleep
+                <strong>7.5 Hours</strong>
+            </div>
+            <div>
+                Academic Study
+                <strong>8 Hours</strong>
+            </div>
+            <div>
+                Coding
+                <strong>1.5 Hours</strong>
+            </div>
+        </div>
+    </header>
+
+    <h2 class="section-title">Daily Routine</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Type</th>
+                <th>What to do</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td class="time">11:00 PM – 6:30 AM</td>
+                <td class="type">Sleep</td>
+                <td>
+                    <span class="subject">Sleep — 7.5 hours</span><br>
+                    <span class="note">No coding, studying or scrolling.</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="time">6:30 – 7:00 AM</td>
+                <td class="type">Morning</td>
+                <td>
+                    <span class="subject">Fajr + Freshen Up</span><br>
+                    <span class="note">Start slowly. No social media.</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="time">7:00 – 9:00 AM</td>
+                <td class="type">Study 01</td>
+                <td>
+                    <span class="subject">Physics / Higher Math</span><br>
+                    <span class="note">Hardest subject first. Learn + solve.</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="time">9:00 – 9:45 AM</td>
+                <td class="type">Break</td>
+                <td>
+                    <span class="subject">Breakfast + Rest</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="time">9:45 – 11:45 AM</td>
+                <td class="type">Study 02</td>
+                <td>
+                    <span class="subject">Chemistry / Biology</span><br>
+                    <span class="note">Concept → textbook → questions.</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="time">11:45 AM – 12:15 PM</td>
+                <td class="type">Break</td>
+                <td>
+                    <span class="subject">Walk + Water + Rest</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="time">12:15 – 2:15 PM</td>
+                <td class="type">Study 03</td>
+                <td>
+                    <span class="subject">Online Class / Theory</span><br>
+                    <span class="note">Watch actively. Make short notes.</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="time">2:15 – 3:00 PM</td>
+                <td class="type">Break</td>
+                <td>
+                    <span class="subject">Zuhr + Lunch + Rest</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="time">3:00 – 4:30 PM</td>
+                <td class="type">Class</td>
+                <td>
+                    <span class="subject">Online Class / Class Revision</span><br>
+                    <span class="note">If no class: use this for backlog.</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="time">4:30 – 5:00 PM</td>
+                <td class="type">Break</td>
+                <td>
+                    <span class="subject">Asr + Mental Reset</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="time">5:00 – 6:30 PM</td>
+                <td class="type">Coding</td>
+                <td>
+                    <span class="subject">Myto Only</span><br>
+                    <span class="note">
+                        Universal Provider → Model Discovery → Smart Routing.
+                        No new project.
+                    </span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="time">6:30 – 7:00 PM</td>
+                <td class="type">Break</td>
+                <td>
+                    <span class="subject">Bath + Maghrib</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="time">7:00 – 9:00 PM</td>
+                <td class="type">Study 04</td>
+                <td>
+                    <span class="subject">CQ / MCQ / Problem Solving</span><br>
+                    <span class="note">Active recall. Solve without seeing answers.</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="time">9:00 – 9:45 PM</td>
+                <td class="type">Break</td>
+                <td>
+                    <span class="subject">Isha + Dinner</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="time">9:45 – 10:45 PM</td>
+                <td class="type">Revision</td>
+                <td>
+                    <span class="subject">Daily Revision + MCQ</span><br>
+                    <span class="note">Review today's mistakes and weak topics.</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="time">10:45 – 11:00 PM</td>
+                <td class="type">Planning</td>
+                <td>
+                    <span class="subject">Plan Tomorrow</span><br>
+                    <span class="note">Choose exactly 3 academic targets.</span>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <h2 class="section-title">Study Method</h2>
+
+    <div class="principles">
+        <div class="principle">
+            <strong>01 — Learn</strong><br>
+            Lecture + textbook. Understand the concept before memorizing.
+        </div>
+
+        <div class="principle">
+            <strong>02 — Recall</strong><br>
+            Close the book and explain the concept from memory.
+        </div>
+
+        <div class="principle">
+            <strong>03 — Solve</strong><br>
+            CQ, MCQ and numerical problems without looking at solutions.
+        </div>
+
+        <div class="principle">
+            <strong>04 — Review</strong><br>
+            Keep a mistake notebook. Revisit mistakes every week.
+        </div>
+    </div>
+
+    <h2 class="section-title">Chapter Sequence</h2>
+
+    <div class="sequence">
+
+        <div class="sequence-item">
+            <div class="number">01</div>
+            <div class="chapter">
+                <strong>Physics</strong><br>
+                Measurement → Vector → Dynamics → Newtonian Mechanics →
+                Work, Energy & Power → Gravitation
+            </div>
+        </div>
+
+        <div class="sequence-item">
+            <div class="number">02</div>
+            <div class="chapter">
+                <strong>Chemistry</strong><br>
+                Qualitative Chemistry → Periodic Properties & Chemical Bonding →
+                Chemical Changes → Quantitative Chemistry → Organic Chemistry
+            </div>
+        </div>
+
+        <div class="sequence-item">
+            <div class="number">03</div>
+            <div class="chapter">
+                <strong>Higher Math</strong><br>
+                Matrices & Determinants → Straight Line → Circle →
+                Trigonometry → Differentiation → Integration → Vector → Probability
+            </div>
+        </div>
+
+        <div class="sequence-item">
+            <div class="number">04</div>
+            <div class="chapter">
+                <strong>Biology</strong><br>
+                Cell → Cell Division → Microorganisms → Plant Groups →
+                Tissue → Plant Physiology → Reproduction → Genetics → Evolution → Ecology
+            </div>
+        </div>
+
+        <div class="sequence-item">
+            <div class="number">05</div>
+            <div class="chapter">
+                <strong>ICT</strong><br>
+                Number System → Digital Logic → Web & HTML →
+                Programming → Database → Networking & Communication
+            </div>
+        </div>
+
+    </div>
+
+    <div class="quote">
+        “You do not need to finish everything today.
+        You only need to win today.”
+    </div>
+
+    <footer class="footer">
+        <span>HSC GPA 5 • Coding Growth</span>
+        <span>ONE DAY AT A TIME</span>
+    </footer>
+
+</div>
+
+</body>
+</html>
